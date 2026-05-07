@@ -7,6 +7,8 @@ import (
 	"time"
 )
 
+const maxCacheSize = 500
+
 var (
 	LeakCache = make(map[string][]byte)
 	mu        sync.Mutex
